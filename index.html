@@ -12,22 +12,24 @@
       src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"
     ></script>
     <style>
-      .blue-button {
+      /* Updated button styles */
+      .green-button {
         position: absolute;
         top: 20px;
         left: 20px;
-        background-color: blue;
+        background-color: green;
         color: white;
-        padding: 10px 20px;
+        padding: 12px 24px;
         text-decoration: none;
         border: none;
-        border-radius: 5px;
-        font-size: 16px;
+        border-radius: 8px;
+        font-size: 18px;
         cursor: pointer;
+        font-weight: bold;
       }
 
-      .blue-button:hover {
-        background-color: darkblue;
+      .green-button:hover {
+        background-color: darkgreen;
       }
     </style>
   </head>
@@ -39,7 +41,6 @@
     >
       <a-camera gps-new-camera="gpsMinDistance: 5"></a-camera>
 
-      <!-- Replace the box with a red sphere -->
       <a-entity
         material="color: red"
         geometry="primitive: sphere"
@@ -47,7 +48,6 @@
         scale="1 1 1"
       ></a-entity>
 
-      <!-- Replace the sphere with another red sphere -->
       <a-entity
         material="color: red"
         geometry="primitive: sphere"
@@ -55,7 +55,6 @@
         scale="1 1 1"
       ></a-entity>
 
-      <!-- Replace the cone with a red sphere -->
       <a-entity
         material="color: red"
         geometry="primitive: sphere"
@@ -63,6 +62,8 @@
         scale="1 1 1"
       ></a-entity>
     </a-scene>
-    <a href="index2.html" class="blue-button">Switch to Marker-Based</a>
+
+    <!-- Updated button with new class -->
+    <a href="index2.html" class="green-button">Switch to Marker-Based</a>
   </body>
 </html>

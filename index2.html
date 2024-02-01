@@ -5,22 +5,24 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://ar-js-org.github.io/AR.js/aframe/build/aframe-ar.js"></script>
     <style>
-      .blue-button {
+      /* Updated button styles */
+      .green-button {
         position: absolute;
         top: 20px;
         left: 20px;
-        background-color: blue;
+        background-color: green;
         color: white;
-        padding: 10px 20px;
+        padding: 12px 24px;
         text-decoration: none;
         border: none;
-        border-radius: 5px;
-        font-size: 16px;
+        border-radius: 8px;
+        font-size: 18px;
         cursor: pointer;
+        font-weight: bold;
       }
 
-      .blue-button:hover {
-        background-color: darkblue;
+      .green-button:hover {
+        background-color: darkgreen;
       }
     </style>
   </head>
@@ -48,6 +50,8 @@
 
       <a-entity camera></a-entity>
     </a-scene>
-    <a href="index.html" class="blue-button">Switch to Location-Based</a>
+
+    <!-- Updated button with new class -->
+    <a href="index.html" class="green-button">Switch to Location-Based</a>
   </body>
 </html>
